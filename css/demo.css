@@ -104,6 +104,8 @@ a:hover {
 	font-size: 0.95em;
 	margin: 0.5em 0 1em;
 	padding: 0;
+	color: #5c5edc;
+	font-weight: 500;
 }
 
 .bp-header__present {
