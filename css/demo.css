@@ -85,15 +85,21 @@ a:hover {
 	mix-blend-mode: difference;
 	z-index: 1;
 	/* font-family: 'Montserrat' !important ; */
-font-family: 'Italiana' !important ;
+	font-family: 'Italiana' !important ;
+	 /* transition-delay: 1s; */
+	transition-duration: 1.5s;
+	transition-timing-function: ease-out;
+}
+.bp-header__title:hover {
+	color: #bd9666;
 }
 .first {
 	animation: showup 1s;
-	transition: all .3s ease;
+	/* transition: all .3s ease;
     transition-property: all;
     transition-duration: 0.2s;
     transition-timing-function: ease;
-    transition-delay: 0s;
+    transition-delay: 0s; */
 }
 
 @keyframes showup {
@@ -103,11 +109,11 @@ font-family: 'Italiana' !important ;
 
 .second {
 	animation: showup 1s;
-	transition: all .3s ease;
+	/* transition: all .3s ease;
     transition-property: all;
     transition-duration: 0.2s;
     transition-timing-function: ease;
-    transition-delay: 0s;
+    transition-delay: 0s; */
 }
 
 
