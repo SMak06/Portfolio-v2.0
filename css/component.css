@@ -406,9 +406,10 @@ input:checked + .slider:before {
 		position: relative;
 		top: auto;
 		left: auto;
+		/* left: auto; */
 		display: block;
 		max-width: 100%;
-		max-height: 50vh;
+		max-height: 55vh;
 		margin: 0 0 0 50%;
 	}
 	.pages-nav__item {
