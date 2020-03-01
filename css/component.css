@@ -74,7 +74,7 @@ html.js,
 }
 
 .link {
-	font-size: 1.20em;
+	font-size: 0.9em;
 	font-weight: bold;
 	position: relative;
 	letter-spacing: 1px;
@@ -88,7 +88,8 @@ html.js,
 
 .link--page {
 	display: block;
-	color: #cecece;
+	color: #4f4f64;
+	/* mix-blend-mode: difference; */
 }
 
 .link--page:not(.link--faded)::before {
@@ -302,7 +303,7 @@ input:checked + .slider:before {
 }
 
 .poster:hover {
-	box-shadow: 1px 1px 17px 1px rgba(0,0,0,.16);
+	box-shadow: 1px 1px 17px 1px rgba(138, 109, 73,.2);
 }
 
 .poster2 {
@@ -425,6 +426,9 @@ input:checked + .slider:before {
 	.link--social {
 		margin: 0 0.1em;
 	}
+	.link {
+		font-size: 1.15em;
+	}
 }
 
 @media screen and (max-width: 40em) {
@@ -476,5 +480,6 @@ input:checked + .slider:before {
 		/* height: 50vh; */
 		padding: 20px;
 		z-index: 10;
+		width: 135px;
 	}
 }
