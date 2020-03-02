@@ -84,6 +84,7 @@ html.js,
 .link:hover,
 .link:focus {
 	color: #fff;
+	/* color: #dbad74; */
 }
 
 .link--page {
@@ -122,7 +123,7 @@ html.js,
 
 .link--faded:hover,
 .link--faded:focus {
-	color: #5c5edc;
+	color:  #dbad74;
 }
 
 .link--page.link--faded {
