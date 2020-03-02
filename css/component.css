@@ -125,13 +125,9 @@ html.js,
 	color: #5c5edc;
 }
 
-.youtube--faded:hover,
-.youtube--faded:focus {
-	color: #c4302b;
-}
-
 .link--page.link--faded {
 	font-size: 0.65em;
+	/* margin-top: 10px; */
 }
 
 .link--social {
@@ -456,7 +452,7 @@ input:checked + .slider:before {
 	  height: 20px;
 	}
 	.pages-nav__item--social {
-		font-size: 0.9em;
+		font-size: 2em;
 	}
 	.menu-button {
 		top: 30px;
@@ -482,4 +478,8 @@ input:checked + .slider:before {
 		z-index: 10;
 		width: 135px;
 	}
+	.link--page.link--faded {
+		margin-top: 10px;
+	}
+
 }

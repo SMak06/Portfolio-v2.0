@@ -91,7 +91,8 @@ a:hover {
 	transition-timing-function: ease-out;
 }
 .bp-header__title:hover {
-	color: #bd9666;
+	/* color: #bd9666; */
+	color: #476780;
 }
 .first {
 	animation: showup 1s;
