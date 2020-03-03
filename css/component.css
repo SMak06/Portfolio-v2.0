@@ -359,6 +359,9 @@ input:checked + .slider:before {
     transition-timing-function: ease;
     transition-delay: 0s;
 }
+.poster-cooking:hover {
+	transform: scale(1.01);
+}
 .poster3 {
 	position: absolute;
 	top: 10vh;
