@@ -185,6 +185,17 @@ background-image: linear-gradient(135deg, #2d3436 0%, #000000 74%); */
 	box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
 }
 
+#page-custom {
+	background-color: #2d3436;
+	background-image: linear-gradient(135deg, #2d3436 0%, #000000 74%);  /*night club*/
+}
+.title-cooking{
+	color: #fff;
+}
+.title-cooking:hover{
+	color: #b59874;
+}
+
 .js .pages-stack--open .page {
 	cursor: pointer;
 	-webkit-transition: -webkit-transform 0.45s, opacity 0.45s;
@@ -332,13 +343,21 @@ input:checked + .slider:before {
 	box-shadow: 1px 1px 17px 1px rgba(138, 109, 73,.2);
 }
 
-.poster2 {
+.poster-cooking {
 	position: absolute;
-	top: 30vh;
-	left: 70%;
-	max-width: 55%;
-	max-height: 50%;
-	z-index: 9;
+	/* top: 10vh; */
+	bottom: 5vh;
+	left: 55%;
+	max-width: 100%;
+	max-height: 80%;
+	z-index: 10;
+	border-radius: 1.5%;
+	/* box-shadow: 1px 1px 2px 1px rgba(0,0,0,.1); */
+	transition: all .3s ease;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 .poster3 {
 	position: absolute;
