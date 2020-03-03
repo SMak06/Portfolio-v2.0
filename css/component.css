@@ -300,6 +300,34 @@ input:checked + .slider:before {
     transition-delay: 0s;
 }
 
+.side--text {
+  /* position: absolute; */
+  /* background: rgba(0,0,0,0.75); */
+  /* color: #4a7cba; */
+		background: -webkit-linear-gradient(100deg, #ad8e66, #8f7554);
+		-webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	/* font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif; */
+	letter-spacing: 0.07em;
+	right: -90px;
+	bottom: 45vh;
+  padding: 10px;
+	z-index: 12;
+	transform: rotate(90deg);
+	/* justify-content: center; */
+	/* align-items: center; */
+	position: fixed;
+	/* mix-blend-mode: difference; */
+	font-size: 0.85em;
+}
+
+.side--text:hover {
+	background: #c4c4c4;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	mix-blend-mode: difference;
+}
+
 .poster:hover {
 	box-shadow: 1px 1px 17px 1px rgba(138, 109, 73,.2);
 }
@@ -482,6 +510,10 @@ input:checked + .slider:before {
 	}
 	.link--page.link--faded {
 		margin-top: 10px;
+	}
+	.side--text {
+		right: -125px;
+		bottom: 25vh;
 	}
 
 }
