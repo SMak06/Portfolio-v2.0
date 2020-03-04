@@ -474,11 +474,21 @@ input:checked + .slider:before {
 		position: relative;
 		top: auto;
 		left: auto;
-		/* left: auto; */
 		display: block;
 		max-width: 100%;
 		max-height: 55vh;
 		margin: 0 0 0 50%;
+		bottom: 5vh;
+	}
+	.poster-cooking, .poster-contact{
+		position: relative;
+		top: auto;
+		/* left: -230px; */
+		left: auto;
+		display: block;
+		max-width: 100%;
+		max-height: 55vh;
+		margin: 0 0 0 0;
 		bottom: 5vh;
 	}
 	.pages-nav__item {
@@ -554,7 +564,7 @@ input:checked + .slider:before {
 	}
 	.side--text {
 		right: -110px;
-		bottom: 25vh;
+		bottom: 30vh;
 	}
 
 }
