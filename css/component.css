@@ -148,6 +148,7 @@ html.js,
 
 .link--page-pdf {
 	font-size: 0.65em;
+	/* margin-top: 10px; */
 }
 
 .link--social {
@@ -527,6 +528,12 @@ input:checked + .slider:before {
 		white-space: nowrap;
 		text-overflow: ellipsis;
 	}
+	.link--page-pdf {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		font-size: 0.65em !important;
+	}
 	.link--social {
 		margin: 0 0.1em;
 	}
@@ -592,6 +599,9 @@ input:checked + .slider:before {
 	}
 	.link--page.link--faded {
 		margin-top: 10px;
+	}
+	.link--page-pdf {
+		top: -3px;
 	}
 	.side--text {
 		right: -110px;
