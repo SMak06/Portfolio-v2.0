@@ -2,12 +2,14 @@ html.js,
 .js body {
 	overflow: hidden;
 	height: 100vh;
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
 }
 
 ::selection {
   color: none;
   background: none;
 }
+
 
 /* Pages nav */
 
@@ -514,7 +516,7 @@ input:checked + .slider:before {
 		max-width: 100%;
 		max-height: 55vh;
 		margin: 0 0 0 0;
-		bottom: 5vh;
+		bottom: 5.8vh;
 	}
 	.pages-nav__item {
 		width: 50%;
