@@ -530,7 +530,7 @@ input:checked + .slider:before {
 		margin: 0 0.1em;
 	}
 	.link {
-		font-size: 1.15em;
+		font-size: 1.4em;
 	}
 }
 
