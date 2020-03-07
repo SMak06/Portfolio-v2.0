@@ -331,7 +331,7 @@ input:checked + .slider:before {
 	  -webkit-text-fill-color: transparent;
 	/* font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif; */
 	letter-spacing: 0.07em;
-	right: -120px;
+	right: -110px;
 	bottom: 45vh;
   padding: 10px;
 	z-index: 12;
@@ -596,8 +596,8 @@ input:checked + .slider:before {
 		top: -3px;
 	}
 	.side--text {
-		right: -150px;
-		bottom: 25vh;
+		right: -140px;
+		bottom: 27vh;
 	}
 
 }
