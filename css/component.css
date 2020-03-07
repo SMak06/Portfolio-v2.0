@@ -4,6 +4,11 @@ html.js,
 	height: 100vh;
 }
 
+::selection {
+  color: none;
+  background: none;
+}
+
 /* Pages nav */
 
 .pages-nav {
