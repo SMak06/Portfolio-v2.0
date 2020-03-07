@@ -596,7 +596,7 @@ input:checked + .slider:before {
 		top: -3px;
 	}
 	.side--text {
-		right: -140px;
+		right: -120px;
 		bottom: 27vh;
 	}
 
