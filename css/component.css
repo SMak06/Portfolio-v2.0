@@ -215,12 +215,24 @@ background-image: linear-gradient(135deg, #2d3436 0%, #000000 74%); */
 	background-color: #2d3436;
 	background-image: linear-gradient(135deg, #2d3436 0%, #000000 74%);  /*night club*/
 }
+
 #page-contact {
   /* background-color: #ffffff;
   background-image: linear-gradient(145deg, #ffffff 0%, #d7e1ec 74%); /*sweet Airan */
 	background-color: #fffffc;
   background-image: linear-gradient(145deg, #fffffc 0%, #beb7a4 74%); /* Old Grey */
 }
+
+#page-about {
+	background-color: #e2c9be;
+  background-image: linear-gradient(315deg, #e2c9be 0%, #fbf7e9 74%);
+}
+
+#page-portfolio {
+	background-color: #ffffff;
+  background-image: linear-gradient(147deg, #ffffff 0%, #d7e1ec 74%); /*Sweet Airan */
+}
+
 .contact-quote {
 	color: #919191;
 }
@@ -252,6 +264,101 @@ background-image: linear-gradient(135deg, #2d3436 0%, #000000 74%); */
 	font-size: 1.25em;
 	max-width: 50%;
 	margin-top: 1.5em;
+}
+
+.info-about {
+	color: #474747;
+	letter-spacing: 0.03em;
+	font-size: 1em;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+button.learn-more {
+  width: 14rem;
+  height: auto;
+}
+button.learn-more .circle {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+	/* color: #8f7554; */
+	/* background-image: linear-gradient(147deg, #a38560 0%, #e0d4ae 74%); */
+  border-radius: 1.625rem;
+}
+button.learn-more .circle .icon {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+button.learn-more .circle .icon.arrow {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+button.learn-more .button-text {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 2rem;
+  color: #282936;
+	font-size: 0.9em;
+  /* font-weight: 700; */
+  line-height: 1.6;
+  text-align: center;
+	letter-spacing: 0.1em;
+  /* text-transform: uppercase; */
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #fff;
+  -webkit-transform: translate(1rem, 0);
+          transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #fff;
 }
 
 .sign-logo {
@@ -397,7 +504,7 @@ input:checked + .slider:before {
 .poster-cooking:hover {
 	transform: scale(1.01);
 }
-.poster-contact {
+.poster-contact, .poster-about {
 	position: absolute;
 	/* top: 10vh; */
 	bottom: 5vh;
@@ -507,7 +614,7 @@ input:checked + .slider:before {
 		margin: 0 0 0 50%;
 		bottom: 5vh;
 	}
-	.poster-cooking, .poster-contact{
+	.poster-cooking, .poster-contact, .poster-about{
 		position: relative;
 		top: auto;
 		/* left: -230px; */
@@ -580,9 +687,12 @@ input:checked + .slider:before {
 		margin: 1em;
 		bottom: 1.5vh;
 	}
-	.poster-contact {
+	.poster-contact, .poster-about {
 		margin: 1em;
 		bottom: 1.5vh;
+	}
+	.poster-about{
+		max-width: 60%;
 	}
 	.sign-logo {
 		position: absolute;
