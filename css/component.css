@@ -267,6 +267,11 @@ background-image: linear-gradient(135deg, #2d3436 0%, #000000 74%); */
 }
 
 .info-about {
+	color: #474747;
+	letter-spacing: 0.03em;
+	font-size: 1em;
+}
+.info-port {
 	/* color: #474747; */
 	color: #eee;
 	letter-spacing: 0.03em;
