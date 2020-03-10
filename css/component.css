@@ -260,6 +260,17 @@ background-image: linear-gradient(135deg, #2d3436 0%, #000000 74%); */
 
 /* page content */
 
+.recipe {
+	font-family: 'Satisfy', cursive;
+	font-size: 2em;
+}
+.recipe-a {
+	 color: #cecece;
+}
+.recipe-a:hover {
+	 color: #fff;
+}
+
 .info {
 	font-size: 1.25em;
 	max-width: 50%;
@@ -360,6 +371,25 @@ button.learn-more .button-text {
 	letter-spacing: 0.1em;
   /* text-transform: uppercase; */
 }
+button.learn-more .button-text-recipe {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 2rem;
+  /* color: #282936; */
+	color: #cecece;
+	font-size: 0.9em;
+  /* font-weight: 700; */
+  line-height: 1.6;
+  text-align: center;
+	letter-spacing: 0.1em;
+  /* text-transform: uppercase; */
+}
 button:hover .circle {
   width: 100%;
 }
@@ -369,6 +399,9 @@ button:hover .circle .icon.arrow {
           transform: translate(1rem, 0);
 }
 button:hover .button-text {
+  color: #fff;
+}
+button:hover .button-text-recipe {
   color: #fff;
 }
 
@@ -631,13 +664,24 @@ input:checked + .slider:before {
 		margin: 0 0 0 50%;
 		bottom: 5vh;
 	}
-	.poster-cooking, .poster-contact, .poster-about, .p3 {
+	.poster-contact, .poster-about, .p3 {
 		position: relative;
 		top: auto;
 		/* left: -230px; */
 		left: auto;
 		display: block;
 		max-width: 100%;
+		max-height: 55vh;
+		margin: 0 0 0 0;
+		bottom: 5.8vh;
+	}
+	.poster-cooking {
+		position: relative;
+		top: auto;
+		/* left: -230px; */
+		left: auto;
+		display: block;
+		max-width: 90%;
 		max-height: 55vh;
 		margin: 0 0 0 0;
 		bottom: 5.8vh;
@@ -668,6 +712,9 @@ input:checked + .slider:before {
 	}
 	.link {
 		font-size: 1.4em;
+	}
+	.recipe {
+		font-size: 1.5em;
 	}
 }
 
