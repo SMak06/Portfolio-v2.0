@@ -324,6 +324,7 @@ button {
 button.learn-more {
   width: 14rem;
   height: auto;
+	margin: 10px;
 }
 button.learn-more .circle {
   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -334,6 +335,69 @@ button.learn-more .circle {
   width: 3rem;
   height: 3rem;
   background: #282936;
+	/* color: #8f7554; */
+	/* background-image: linear-gradient(147deg, #a38560 0%, #e0d4ae 74%); */
+  border-radius: 1.625rem;
+}
+button.learn-more-football .circle {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  /* background: #282936; */
+	background-image: url('../images/football.jpg');
+	background-size: cover;
+	/* color: #8f7554; */
+	/* background-image: linear-gradient(147deg, #a38560 0%, #e0d4ae 74%); */
+  border-radius: 1.625rem;
+}
+button.learn-more-tp .circle {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  /* background: #282936; */
+	background-image: url('../images/interests.jpg');
+	background-size: cover;
+	background-position: center;
+	/* color: #8f7554; */
+	/* background-image: linear-gradient(147deg, #a38560 0%, #e0d4ae 74%); */
+  border-radius: 1.625rem;
+}
+button.learn-more-painting .circle {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  /* background: #282936; */
+	background-image: url('../images/painting.jpg');
+	background-size: cover;
+	background-position: center;
+	/* color: #8f7554; */
+	/* background-image: linear-gradient(147deg, #a38560 0%, #e0d4ae 74%); */
+  border-radius: 1.625rem;
+}
+button.learn-more-music .circle {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  /* background: #282936; */
+	background-image: url('../images/spotify.png');
+	background-size: cover;
+	background-position: center;
 	/* color: #8f7554; */
 	/* background-image: linear-gradient(147deg, #a38560 0%, #e0d4ae 74%); */
   border-radius: 1.625rem;
@@ -385,6 +449,7 @@ button.learn-more .button-text {
   text-align: center;
 	letter-spacing: 0.1em;
   /* text-transform: uppercase; */
+	mix-blend-mode: difference;
 }
 button.learn-more .button-text-recipe {
   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
