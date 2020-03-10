@@ -229,11 +229,8 @@ background-image: linear-gradient(135deg, #2d3436 0%, #000000 74%); */
 }
 
 #page-portfolio {
-	/* background-color: #ffffff;
-  background-image: linear-gradient(147deg, #ffffff 0%, #d7e1ec 74%); /*Sweet Airan */
-	background-color: #fde7f9;
-background-image: linear-gradient(315deg, #fde7f9 0%, #aacaef 74%);
-
+	background-color: #ffa69e;
+  background-image: linear-gradient(147deg, #ffa69e 0%, #5d4954 74%); /*Mona Lisa's laugh */
 }
 
 .contact-quote {
@@ -270,7 +267,8 @@ background-image: linear-gradient(315deg, #fde7f9 0%, #aacaef 74%);
 }
 
 .info-about {
-	color: #474747;
+	/* color: #474747; */
+	color: #eee;
 	letter-spacing: 0.03em;
 	font-size: 1em;
 }
@@ -344,7 +342,8 @@ button.learn-more .button-text {
   bottom: 0;
   padding: 0.75rem 0;
   margin: 0 0 0 2rem;
-  color: #282936;
+  /* color: #282936; */
+	color: #eee;
 	font-size: 0.9em;
   /* font-weight: 700; */
   line-height: 1.6;
@@ -507,7 +506,7 @@ input:checked + .slider:before {
 .poster-cooking:hover {
 	transform: scale(1.01);
 }
-.poster-contact, .poster-about {
+.poster-contact, .poster-about, .poster-portfolio {
 	position: absolute;
 	/* top: 10vh; */
 	bottom: 5vh;
@@ -523,8 +522,14 @@ input:checked + .slider:before {
     transition-timing-function: ease;
     transition-delay: 0s;
 }
+.p3 {
+	visibility: hidden;
+}
 .poster-contact:hover {
 	transform: scale(1.01);
+}
+.p2:hover {
+	transform: scale(1.15);
 }
 
 /* Menu button */
@@ -617,7 +622,7 @@ input:checked + .slider:before {
 		margin: 0 0 0 50%;
 		bottom: 5vh;
 	}
-	.poster-cooking, .poster-contact, .poster-about{
+	.poster-cooking, .poster-contact, .poster-about, .p3 {
 		position: relative;
 		top: auto;
 		/* left: -230px; */
@@ -627,6 +632,12 @@ input:checked + .slider:before {
 		max-height: 55vh;
 		margin: 0 0 0 0;
 		bottom: 5.8vh;
+	}
+	.p2, .p1{
+		display: none;
+	}
+	.p3 {
+		visibility: visible;
 	}
 	.pages-nav__item {
 		width: 50%;
@@ -690,7 +701,7 @@ input:checked + .slider:before {
 		margin: 1em;
 		bottom: 1.5vh;
 	}
-	.poster-contact, .poster-about {
+	.poster-contact, .poster-about, .p3 {
 		margin: 1em;
 		bottom: 1.5vh;
 	}
