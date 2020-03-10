@@ -681,7 +681,7 @@ input:checked + .slider:before {
 		/* left: -230px; */
 		left: auto;
 		display: block;
-		max-width: 90%;
+		max-width: 95%;
 		max-height: 55vh;
 		margin: 0 0 0 0;
 		bottom: 5.8vh;
