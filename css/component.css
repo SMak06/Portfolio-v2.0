@@ -242,6 +242,34 @@ background-image: linear-gradient(135deg, #2d3436 0%, #000000 74%); */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	animation: slide 10s infinite;
+	animation-delay: 5s;
+}
+#page-interests::after {
+	content: "";
+	background: black;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0.5;
+	z-index: -11;
+}
+
+@keyframes slide {
+	0%{
+		background-image: url('../images/eye.jpg');
+	}
+	30%{
+		background-image: url('../images/football.jpg');
+	}
+	60%{
+		background-image: url('../images/camden.jpg');
+	}
+	85%{
+		background-image: url('../images/sikkim.jpg');
+	}
 }
 
 .contact-quote {
@@ -564,16 +592,16 @@ input:checked + .slider:before {
   /* position: absolute; */
   /* background: rgba(0,0,0,0.75); */
   /* color: #4a7cba; */
-		background: -webkit-linear-gradient(100deg, #ad8e66, #8f7554);
-		-webkit-background-clip: text;
-	  -webkit-text-fill-color: transparent;
+	background: -webkit-linear-gradient(100deg, #ad8e66, #8f7554);
+	-webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
 	/* font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif; */
 	letter-spacing: 0.07em;
 	right: -110px;
 	bottom: 45vh;
   padding: 10px;
 	z-index: 12;
-	transform: rotate(90deg);
+	transform: rotate(90deg) !important;
 	/* justify-content: center; */
 	/* align-items: center; */
 	position: fixed;
@@ -866,5 +894,4 @@ input:checked + .slider:before {
 		right: -120px;
 		bottom: 27vh;
 	}
-
 }
