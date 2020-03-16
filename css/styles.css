@@ -13,7 +13,6 @@
 	box-sizing: border-box;
 }
 
-
 /* Helper classes */
 
 .cf:before,
@@ -226,33 +225,6 @@ a:hover {
 	/* color: #3C6292; */
 }
 
-.bp-tooltip:after {
-	font-size: 50%;
-	font-size: 75%;
-	position: relative;
-	top: -8px;
-	left: -12px;
-	width: 30px;
-	height: 30px;
-}
-
-.bp-tooltip:hover:before {
-	content: attr(data-content);
-	font-size: 110%;
-	font-weight: 700;
-	line-height: 1.2;
-	position: absolute;
-	left: auto;
-	margin-left: 4px;
-	padding: 0.8em 1em;
-	text-align: left;
-	text-indent: 0;
-	letter-spacing: 0;
-	text-transform: none;
-	color: #fff;
-	background: #5c5edc;
-}
-
 .bp-nav {
 	margin: 0 0 0 -0.75em;
 }
@@ -423,7 +395,6 @@ html.js,
   color: none;
   background: none;
 }
-
 
 /* Pages nav */
 

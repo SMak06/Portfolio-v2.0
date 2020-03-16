@@ -1,13 +1,3 @@
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- *
- * Copyright 2015, Codrops
- * http://www.codrops.com
- */
 ;(function(window) {
 
 	'use strict';
@@ -215,37 +205,6 @@
 
 		return idxs;
 	}
-
-  //FIX THEME
-
-  // function setTheme(page) {
-  //           localStorage.setItem('theme', page);
-  //           document.documentElement.className = page;
-  //       }
-  //
-  //       // function to toggle between light and dark theme
-  //       function toggleTheme() {
-  //           if (localStorage.getItem('theme') === 'theme-dark') {
-  //               setTheme('theme-light');
-  //           } else {
-  //               setTheme('theme-dark');
-  //           }
-  //       }
-  //
-  //       // Immediately invoked function to set the theme on initial load
-  //       (function () {
-  //           if (localStorage.getItem('theme') === 'page') {
-  //               setTheme('page');
-  //               document.getElementById('slider').checked = false;
-  //               document.getElementById('page-home').backgroundColor='#a38560';
-  //               document.getElementById('page-home').backgroundImage='linear-gradient(315deg, #a38560 0%, #e0d4ae 74%)';
-  //           } else {
-  //               setTheme('page');
-  //             document.getElementById('slider').checked = true;
-  //             document.getElementById('page-home').backgroundColor='#d9d9d9';
-  //             document.getElementById('page-home').backgroundImage='linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%)';
-  //           }
-  //       })();
 
 	init();
 
