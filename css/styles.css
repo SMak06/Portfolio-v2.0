@@ -7,6 +7,28 @@
 }
 /* Resets */
 
+#preloader {
+  background : #fff;
+  bottom     : 0;
+  left       : 0;
+  position   : fixed;
+  right      : 0;
+  top        : 0;
+  z-index    : 9999;
+}
+
+#status,
+.status-img {
+  height              : 100%;
+  width               : 100%;
+  left                : 0;
+  position            : absolute;
+  top                 : 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 *,
 *:after,
 *:before {
@@ -91,6 +113,7 @@ a:hover {
 	animation-delay: .5s;
 	opacity: 0;
 	animation-fill-mode: forwards;
+	animation-duration: 1s;
 }
 .menu-button {
 	animation: ham 1s;
@@ -98,6 +121,7 @@ a:hover {
 	/* animation-timing-function: ease-in; */
 	animation-fill-mode: forwards;
 	opacity: 0;
+	animation-duration: .5s;
 }
 .on-start, .home-logo {
 	animation: home-load 1s;
@@ -111,7 +135,7 @@ a:hover {
 	animation-timing-function: ease-out;
 	animation-fill-mode: forwards;
 	animation-delay: 2s;
-	animation-duration: 1s;
+	animation-duration: .7s;
 }
 .side--text {
 	animation: side-text 1s;
@@ -119,6 +143,7 @@ a:hover {
 	/* animation-timing-function: ease-in; */
 	animation-fill-mode: forwards;
 	opacity: 0;
+	animation-duration: .5s;
 	/* animation: rotate 1s; */
 }
 .home-img {
@@ -127,6 +152,7 @@ a:hover {
 	/* animation-timing-function: ease-in; */
 	animation-fill-mode: forwards;
 	animation-delay: 1.5s;
+	/* animation-duration: .5s; */
 }
 @keyframes pic {
 	0%{

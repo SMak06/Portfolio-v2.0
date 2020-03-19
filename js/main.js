@@ -1,3 +1,10 @@
+// PRE-LOADER //
+	$(window).on("load",function(){
+		$("#preloader").fadeOut("slow");
+	});
+//END//
+
+
 ;(function(window) {
 
 	'use strict';
