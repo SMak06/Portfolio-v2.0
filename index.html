@@ -16,27 +16,30 @@
 </head>
 
 <body>
-	<!-- <div id="preloader">
-    <div id="status">
-        <div class="status-img"><img src="images/preload.png" alt=""></div>
-    </div>
-</div> -->
+	<script>
+		document.body.classList.add('js-loading');
+		window.addEventListener("load", showPage);
+		function showPage() {
+			document.body.classList.remove('js-loading');
+		}
+	</script>
 
-<div id="preloader" class='preloader-container'>
-   <div id="status" class='preloader full-width'>
-    <div class='preloader-dotline'>
-      <div class='dot'></div>
-      <div class='dot'></div>
-      <div class='dot'></div>
-      <div class='dot'></div>
-      <div class='dot'></div>
-      <div class='dot'></div>
-      <div class='dot'></div>
-      <div class='dot'></div>
-     </div>
-  </div>
-</div>
-
+	<!-- Pre-loader -->
+	<div id="preloader" class='preloader-container'>
+	   <div id="status" class='preloader full-width'>
+	    <div class='preloader-dotline'>
+	      <div class='dot'></div>
+	      <div class='dot'></div>
+	      <div class='dot'></div>
+	      <div class='dot'></div>
+	      <div class='dot'></div>
+	      <div class='dot'></div>
+	      <div class='dot'></div>
+	      <div class='dot'></div>
+	     </div>
+	  </div>
+	</div>
+	<!-- Pre-loader end -->
 
 	<!-- navigation -->
 	<nav class="pages-nav">

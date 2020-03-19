@@ -1,4 +1,8 @@
-/* https://css-tricks.com/making-animations-wait/ */
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
 
 @font-face {
 	font-family: 'bpicons';
@@ -30,6 +34,8 @@
 	justify-content: center;
 	align-items: center;
 }
+
+/* https://codepen.io/Tbgse/pen/oxbmmL?editors=1100 */
 
 .preloader-dotline .dot {
   display: inline-block;
