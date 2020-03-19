@@ -1,9 +1,3 @@
-.js-loading *,
-.js-loading *:before,
-.js-loading *:after {
-  animation-play-state: paused !important;
-}
-
 @font-face {
 	font-family: 'bpicons';
 	font-weight: normal;
@@ -89,6 +83,12 @@
     transform: translateX(300px);
     opacity: 0;
   }
+}
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
 }
 
 *,
