@@ -30,7 +30,7 @@
 }
 
 /* https://codepen.io/Tbgse/pen/oxbmmL?editors=1100 */
-
+/*
 .preloader-dotline .dot {
   display: inline-block;
   background: #d4af37;
@@ -83,7 +83,7 @@
     transform: translateX(300px);
     opacity: 0;
   }
-}
+} */
 
 .js-loading *,
 .js-loading *:before,
