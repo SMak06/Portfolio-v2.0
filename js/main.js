@@ -4,6 +4,10 @@
 	});
 //END//
 
+function TBD_alert() {
+  alert("TBD");
+}
+
 
 ;(function(window) {
 
