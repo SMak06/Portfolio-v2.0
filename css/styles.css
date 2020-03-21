@@ -169,6 +169,7 @@ a:hover {
 .bp-header__title:hover {
 	/* color: #bd9666; */
 	color: #476780;
+	text-shadow: -5px 5px 5px rgba(255,255,255, 0.1);
 }
 .first, .second {
 	animation: showup 1s;
