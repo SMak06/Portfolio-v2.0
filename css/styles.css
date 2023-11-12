@@ -1269,6 +1269,7 @@ input:checked + .slider:before {
 		max-height: 55vh;
 		margin: 0 0 0 0;
 		bottom: 5.8vh;
+		z-index: -1;
 	}
 	.p2, .p1{
 		display: none;
@@ -1371,3 +1372,89 @@ input:checked + .slider:before {
 		bottom: 27vh;
 	}
 }
+
+#copyNotification {
+	display: none;
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	z-index: 1000;
+	text-align: center;
+}
+
+#tbdNotification {
+	display: none;
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgb(176, 0, 47);
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	z-index: 1000;
+	text-align: center;
+}
+
+
+.recipe-modal {
+    display: none;
+    position: fixed;
+    z-index: 11;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+}
+
+.recipe-modal-content {
+    position: relative;
+    background-color: rgba(23, 23, 23, .9);
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+.recipe-modal-heading {
+	font-family: 'Satisfy', cursive;
+}
+
+.recipe-modal-text {
+	font-family: 'Montserrat', cursive;
+	font-size: .9em;
+}
+
+.recipe-close {
+    color: #aaa;
+    position: absolute;
+    bottom: 0px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.recipe-close:hover,
+.recipe-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+

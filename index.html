@@ -54,7 +54,7 @@
 			<a class="link link--social link--faded" target="_blank" href="https://github.com/SMak06"><i class="fa fa-github"></i><span class="text-hidden">Github</span></a>
 			<a class="link link--social link--faded" target="_blank" href="https://www.linkedin.com/in/sahil-makwane/"><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
 			<a class="link link--social link--faded" target="_blank" href="https://medium.com/@makwane.work"><i class="fa fa-medium"></i><span class="text-hidden">Medium</span></a>
-			<a class="link link--social link--faded" target="_blank" href="https://www.instagram.com/s_makwayne/"><i class="fa fa-instagram"></i><span class="text-hidden">Instagram</span></a>
+			<!-- <a class="link link--social link--faded" target="_blank" href="https://www.instagram.com/s_makwayne/"><i class="fa fa-instagram"></i><span class="text-hidden">Instagram</span></a> -->
 		</div>
 	</nav>
 	<!-- /navigation-->
@@ -98,14 +98,14 @@
 				<h1 class="bp-header__title">Projects</h1>
 				<p class="bp-header__desc">I do what I love <i class="fa fa-heart-o" aria-hidden="true"></i></p>
 				<p class="info info-port">
-					Whizz over to my <a class="info-git" href="https://github.com/SMak06">GitHub <i class="fa fa-github-alt" aria-hidden="true"></i></a> for all my projects or explore my portfolio / projects page.
+					Whizz over to my GitHub <i class="fa fa-github-alt" aria-hidden="true"></i> for all my projects or explore my portfolio / projects page.
 				</p>
-				<button onclick = "TBD_alert()" class="learn-more">
+				<a target="_blank" href="https://github.com/SMak06"><button class="learn-more">
 			    <span class="circle" aria-hidden="true">
 			      <span class="icon arrow"></span>
 			    </span>
-			    <span class="button-text">Discover Portfolio</span>
-			  </button>
+			    <span class="button-text">Discover Projects</span>
+			  </button></a>
 			</header>
 			<img class="poster-portfolio p1" src="images/portfolio-2.webp" alt="portfolio" />
 			<img class="poster-portfolio p2" src="images/portfolio-1.png" alt="portfolio" />
@@ -151,8 +151,36 @@
 				<p class="bp-header__desc">The most addictive art form; once you start cooking, there is no going back <i class="fa fa-cutlery" aria-hidden="true"></i></p>
 				<p class="info">
 					Here's one my top recipes:
-					<p class="recipe"><span style="font-size:0.7em">&#10148; </span><a onclick = "TBD_alert()" class="recipe-a" href="#">Delish French Toasts</a></p>
-					<button onclick = "TBD_alert()" class="learn-more">
+					<p class="recipe"><span style="font-size:0.7em">&#10148; </span><a id="openModalLink" class="recipe-a" href="#">Delish French Toasts</a></p>
+					<div id="recipeModal" class="recipe-modal">
+						<div class="recipe-modal-content">
+							<span class="recipe-close">&times;</span>
+							<h2 class="recipe-modal-heading">Delish French Toasts</h2>
+							<h3 class="recipe-modal-heading">Ingredients</h3>
+							<ul class="recipe-modal-text">
+								<li class="recipe-item">Bread</li>
+								<li class="recipe-item">Eggs</li>
+								<li class="recipe-item">Cinnamon</li>
+								<li class="recipe-item">Berries (Strawberries/Blueberries)</li>
+								<li class="recipe-item">Sugar/Sweetener</li>
+								<li class="recipe-item">Vanilla Extract</li>
+							</ul>
+							<h3 class="recipe-modal-heading">Method</h3>
+							<ol class="recipe-modal-text">
+								<li class="recipe-item">Whisk eggs, sugar/sweetener, optionally a banana, cinnamon and Vanilla Extract in a bowl bigger than the dimensions of your bread. Optionally add a pinch of salt for taste</li>
+								<li class="recipe-item">Heat a pan with some butter and dunk the bread in the mixture</li>
+								<li class="recipe-item">Use only one hand for dipping and keep the other dry. Flip the bread 5-6 times in the mixture </li>
+								<li class="recipe-item">Place the bread on the pan using the wet hand, away from you. Pour some mixture on top</li>
+								<li class="recipe-item">Optionally add some blueberries to the bread right now on the pan. Peek the bread and if you need a brown crust forming at the botton, flip</li>
+								<li class="recipe-item">Once you see the brown crust forming on the other side as well, that's it, take it off the pan and onto a plate</li>
+								<li class="recipe-item">Add syrups, sacues, and berries of your choice on top</li>
+							</ol>
+						</div>
+					</div>
+					<button id="tbdButton" class="learn-more">
+					<div id="tbdNotification">
+						Cooking soon!
+					</div>
 				    <span class="circle" aria-hidden="true">
 				      <span class="icon arrow"></span>
 				    </span>
@@ -168,15 +196,21 @@
 			<header class="bp-header cf">
 				<h1 class="bp-header__title">Contact</h1>
 				<p class="bp-header__desc">"Manners maketh man"</p>
-				<p class="info contact-quote">
-					sm9127@nyu.edu
-				</p>
-				<p class="info contact-quote">
-					Makwane.work@gmail.com
-				</p>
+				<span class="info contact-quote">
+					makwane.work@gmail.com&nbsp;
+				</span>
+				<button id="copyButton" title="Copy to Clipboard">
+					<img style="width:20px" src="images/copy-icon.png">
+				</button>
+				<!-- Hidden container for the text you want to copy -->
+				<div id="textToCopy" style="display: none;">makwane.work@gmail.com</div>
+				<div id="copyNotification">
+					Copied to Clipboard!
+				</div>
+				
 			</header>
 			<img class="poster-contact" src="images/contact.jpg" alt="img04" />
-			<<a href="index.html"><div class="logo-top"><img class="sign-logo" src="images/sign.png" alt="logo" /></div></a>
+			<a href="index.html"><div class="logo-top"><img class="sign-logo" src="images/sign.png" alt="logo" /></div></a>
 		</div>
 	</div>
 	<!-- /pages-stack -->

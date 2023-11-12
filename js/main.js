@@ -217,6 +217,61 @@ function TBD_alert() {
 		return idxs;
 	}
 
+	document.getElementById("copyButton").addEventListener("click", function() {
+		var text = document.getElementById("textToCopy").innerText;
+		var textarea = document.createElement("textarea");
+		textarea.value = text;
+		document.body.appendChild(textarea);
+		textarea.select();
+		textarea.setSelectionRange(0, 99999);
+		document.execCommand("copy");
+		document.body.removeChild(textarea);
+	
+		var notification = document.getElementById("copyNotification");
+		notification.style.display = "block";
+		setTimeout(function() {
+			notification.style.display = "none";
+		}, 2000);
+	});
+
+	document.getElementById("tbdButton").addEventListener("click", function() {	
+		var notification = document.getElementById("tbdNotification");
+		notification.style.display = "block";
+		setTimeout(function() {
+			notification.style.display = "none";
+		}, 2000);
+	});
+
+	// Get the link that opens the modal
+var link = document.getElementById("openModalLink");
+
+// Get the modal
+var modal = document.getElementById("recipeModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("recipe-close")[0];
+
+// When the user clicks the link, open the modal 
+link.onclick = function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
+
+	
+	
+
 	init();
 
 })(window);

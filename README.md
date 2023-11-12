@@ -1,3 +1,6 @@
 # Portfolio-v2.0
 
-My portfolio website. TBD
+I love design
+I love websites
+I love websites with good designs
+Here's my website with a design I made with love ♡
